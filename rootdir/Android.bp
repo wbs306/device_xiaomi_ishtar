@@ -1,0 +1,16 @@
+//
+// Copyright (C) 2023 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+sh_binary {
+    name: "set_permissive.sh",
+    src: "bin/set_permissive.sh"
+}
+
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "etc/fstab.qcom",
+    vendor: true,
+}
