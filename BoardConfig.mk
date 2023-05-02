@@ -72,6 +72,8 @@ BOARD_BOOTCONFIG += androidboot.memcg=1
 BOARD_BOOTCONFIG += androidboot.usbcontroller=a600000.dwc3
 BOARD_BOOTCONFIG += androidboot.console=ttyMSM0
 
+BOARD_BOOTCONFIG += androidboot.selinux=permissive
+
 BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=307200
 BOARD_KERNEL_CMDLINE += disable_dma32=on
 BOARD_KERNEL_CMDLINE += bootconfig
