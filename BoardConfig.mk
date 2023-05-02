@@ -76,7 +76,6 @@ BOARD_BOOTCONFIG += androidboot.selinux=permissive
 
 BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=307200
 BOARD_KERNEL_CMDLINE += disable_dma32=on
-BOARD_KERNEL_CMDLINE += bootconfig
 
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
