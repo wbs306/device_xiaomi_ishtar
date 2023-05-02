@@ -72,16 +72,15 @@ BOARD_BOOTCONFIG += androidboot.memcg=1
 BOARD_BOOTCONFIG += androidboot.usbcontroller=a600000.dwc3
 BOARD_BOOTCONFIG += androidboot.console=ttyMSM0
 
-BOARD_VENDOR_CMDLINE := video=vfb:640x400,bpp=32,memsize=307200
-BOARD_VENDOR_CMDLINE += disable_dma32=on
-BOARD_VENDOR_CMDLINE += bootconfig
+BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=307200
+BOARD_KERNEL_CMDLINE += disable_dma32=on
+BOARD_KERNEL_CMDLINE += bootconfig
 
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
-BOARD_MKBOOTIMG_ARGS += --vendor_cmdline $(BOARD_VENDOR_CMDLINE)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
 
 # Partitions
