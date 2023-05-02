@@ -45,7 +45,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:vendor_ramdisk/first_stage_ramdisk/fstab.qcom
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:vendor_ramdisk/first_stage_ramdisk/fstab.qcom \
+    $(LOCAL_PATH)/prebuilts/ramdisk_module/modules.load.recovery:vendor_ramdisk/lib/modules/modules.load.recovery \
+    $(LOCAL_PATH)/prebuilts/ramdisk_module/modules.blocklist:vendor_ramdisk/lib/modules/modules.blocklist
 
 # Recovery
 PRODUCT_COPY_FILES += \
