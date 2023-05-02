@@ -53,6 +53,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/ramdisk_module/modules.blocklist:vendor_ramdisk/lib/modules/modules.blocklist
 
 # Recovery
+PRODUCT_PACKAGES += \
+    init.recovery.qcom.rc
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/prebuilts/recovery_module/,recovery/root/vendor/lib/modules)
 
