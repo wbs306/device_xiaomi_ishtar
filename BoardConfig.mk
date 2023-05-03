@@ -131,6 +131,7 @@ BOARD_PREBUILT_VENDOR_DLKMIMAGE := $(DEVICE_PATH)/prebuilts/vendor_dlkm.img
 
 # Platform
 TARGET_BOARD_PLATFORM := kalama
+BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
